@@ -8,7 +8,7 @@ import torch.nn.functional as F
 
 def get_gaussian_filter(kernel_shape):
 
-    x = np.zeros(kernel_shape, dtype='float64')    
+    x = np.zeros(kernel_shape, dtype='float64')
 
     def gauss(x, y, sigma=2.0):
         Z = 2 * np.pi * sigma ** 2
